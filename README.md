@@ -14,7 +14,18 @@ If you are like me and trust random strangers on the internet, I uploaded a fres
 
 Note that there are no hardware changes necessary to enable auto focus on the BPI (unlike some Youtube videos suggest)!
 
+## Camera preview
+To check if everything is working you can install the following packages:
+- ffmpeg
+- v4l-utils
+
 Please read [this section](https://github.com/Qengineering/BananaPi-M2-Zero-OV5640#ov5640) to learn how to get started and which camera to use.
+
+After you set the resolution you can use
+```
+ffplay /dev/video1 -video_size <resolution>
+```
+to view a live feed.
 
 # Thanks to:
 - **Q-engineering** for creating [this image](https://github.com/Qengineering/BananaPi-M2-Zero-OV5640)
